@@ -1,0 +1,8 @@
+// Mide el tiempo que tarda en cargarse el contenido
+var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+
+// Muestra el tiempo de carga en la consola del navegador
+console.log("La página tardó " + loadTime + " milisegundos en cargar.");
+
+// Envía el tiempo de carga a Google Analytics u otra herramienta de seguimiento
+ga('send', 'timing', 'Carga de página', 'Tiempo de carga', loadTime);
