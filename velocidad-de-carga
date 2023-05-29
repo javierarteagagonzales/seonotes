@@ -6,3 +6,5 @@ console.log("La página tardó " + loadTime + " milisegundos en cargar.");
 
 // Envía el tiempo de carga a Google Analytics u otra herramienta de seguimiento
 ga('send', 'timing', 'Carga de página', 'Tiempo de carga', loadTime);
+
+//medir velocidad internet con speedtest ookla
